@@ -1,15 +1,4 @@
-ERROR:root:Q6Attempted division by zero.
-Traceback (most recent call last):
-  File "C:\Users\karan\AppData\Local\Temp\ipykernel_28120\2175538544.py", line 5, in <module>
-    result = 10 / 0
-             ~~~^~~
-ZeroDivisionError: division by zero
-ERROR:root:Q7This is an ERROR message.
-ERROR:root:Q14 Division by zero error occurred.
-Traceback (most recent call last):
-  File "C:\Users\karan\AppData\Local\Temp\ipykernel_28120\2822582707.py", line 6, in <module>
-    result = 1 / 0
-             ~~^~~
+
 ZeroDivisionError: division by zero
 INFO:RotatingLog:This is log message 0
 INFO:RotatingLog:This is log message 1
