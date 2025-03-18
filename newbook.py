@@ -1,35 +1,40 @@
 from nbformat import v4 as nbf
 
 # Define your markdown and code questions
-markdown_questions = [
-   #copy question one by one
-   "What is a parameter?",
-"What is correlation?What does negative correlation mean?",
-"Define Machine Learning. What are the main components in Machine Learning?",
-"How does loss value help in determining whether the model is good or not?",
-"What are continuous and categorical variables?",
-"How do we handle categorical variables in Machine Learning? What are the common techniques?",
-"What do you mean by training and testing a dataset?",
-"What is sklearn.preprocessing?",
-"What is a Test set?",
-"How do we split data for model fitting (training and testing) in Python? How do you approach a Machine Learning problem?",
-"Why do we have to perform EDA before fitting a model to the data?",
-"What is correlation?",
-"What does negative correlation mean?",
-"How can you find correlation between variables in Python?",
-"What is causation? Explain difference between correlation and causation with an example.",
-"What is an Optimizer? What are different types of optimizers? Explain each with an example.",
-"What is sklearn.linear_model ?",
-"What does model.fit() do? What arguments must be given?",
-"What does model.predict() do? What arguments must be given?",
-"What are continuous and categorical variables?",
-"What is feature scaling? How does it help in Machine Learning?",
-"How do we perform scaling in Python?",
-"What is sklearn.preprocessing?",
-"How do we split data for model fitting (training and testing) in Python?",
-"Explain data encoding?"
+markdown_questions =  [
+    #copy question one by one 
+  "What is Simple Linear Regression?",
+  "What are the key assumptions of Simple Linear Regression?",
+  "What does the coefficient m represent in the equation Y=mX+c?",
+  "What does the intercept c represent in the equation Y=mX+c?",
+  "How do we calculate the slope m in Simple Linear Regression?",
+  "What is the purpose of the least squares method in Simple Linear Regression?",
+  "How is the coefficient of determination (R²) interpreted in Simple Linear Regression?",
+  "What is Multiple Linear Regression?",
+  "What is the main difference between Simple and Multiple Linear Regression?",
+  "What are the key assumptions of Multiple Linear Regression?",
+  "What is heteroscedasticity, and how does it affect the results of a Multiple Linear Regression model?",
+  "How can you improve a Multiple Linear Regression model with high multicollinearity?",
+  "What are some common techniques for transforming categorical variables for use in regression models?",
+  "What is the role of interaction terms in Multiple Linear Regression?",
+  "How can the interpretation of intercept differ between Simple and Multiple Linear Regression?",
+  "What is the significance of the slope in regression analysis, and how does it affect predictions?",
+  "How does the intercept in a regression model provide context for the relationship between variables?",
+  "What are the limitations of using R² as a sole measure of model performance?",
+  "How would you interpret a large standard error for a regression coefficient?",
+  "How can heteroscedasticity be identified in residual plots, and why is it important to address it?",
+  "What does it mean if a Multiple Linear Regression model has a high R² but low adjusted R²?",
+  "Why is it important to scale variables in Multiple Linear Regression?",
+  "What is polynomial regression?",
+  "How does polynomial regression differ from linear regression?",
+  "When is polynomial regression used?",
+  "What is the general equation for polynomial regression?",
+  "Can polynomial regression be applied to multiple variables?",
+  "What are the limitations of polynomial regression?",
+  "What methods can be used to evaluate model fit when selecting the degree of a polynomial?",
+  "Why is visualization important in polynomial regression?",
+  "How is polynomial regression implemented in Python?"
 ]
-
 code_questions = [
    #copy question one by one 
     
@@ -47,7 +52,7 @@ for i, question in enumerate(code_questions):
     notebook.cells.append(nbf.new_code_cell(f"# Q{i+1} {question}"))
 
 # Save the notebook
-notebook_path = r"D:\k study\studyrelated things\assignments-\Feature_Engineering.ipynb" #change the file name as you desire 
+notebook_path = r"D:\k study\datascience_genAI\assignments-\Regression.ipynb" #change the file name as you desire 
 with open(notebook_path, "w") as f:
     f.write(nbf.writes(notebook))
 
